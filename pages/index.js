@@ -62,7 +62,7 @@ export default function Home() {
       {data &&
         data.concursos.map((concursos) => (
 
-          <Accordion key={concursos.id} defaultActiveKey={concursos.id}>
+          <Accordion key={concursos.id}>
             <Accordion.Item eventKey={concursos.id}>
               <Accordion.Header>{concursos.id} - {concursos.titulo}</Accordion.Header>
               <Accordion.Body>
