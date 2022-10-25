@@ -65,21 +65,12 @@ export default function Home() {
                       <th></th>
                       <th></th>
                       <th></th>
-                      <th></th>
                     </tr>
                   </thead>
                   <tbody>
                     {concursos.cursos.map((cursos) => (
 
                       <tr key={cursos.id}>
-
-                        <td>
-                          <Link href={`/curso/${cursos.id}`}>
-                            <a>
-                              {cursos.id}
-                            </a>
-                          </Link>
-                        </td>
                         <td>
                         <Link href={`/curso/${cursos.id}`}>
                             <a>
