@@ -84,7 +84,7 @@ export default function Curso() {
       {data &&
         data.aulas.map((aula) => (
 
-          <Accordion key={aula.id} defaultActiveKey={aula.id}>
+          <Accordion key={aula.id}>
             <Accordion.Item eventKey={aula.id}>
               <Accordion.Header>{aula.nome} - {aula.conteudo}</Accordion.Header>
               <Accordion.Body>
