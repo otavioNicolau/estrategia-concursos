@@ -12,6 +12,7 @@ import {
   ListGroup,
   Container,
   Navbar,
+  Spinner
 } from 'react-bootstrap';
 
 
@@ -40,7 +41,15 @@ export default function Curso() {
 
 
   if (error) return <div>falhou em carregar</div>
-  if (!data) return <div>carregando...</div>
+  
+  
+  if (!data){ 
+    return (
+      <Spinner animation="border" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </Spinner>
+    ) 
+  }
   console.table(data);
 
   return (
