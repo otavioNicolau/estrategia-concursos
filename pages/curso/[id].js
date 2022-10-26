@@ -56,7 +56,7 @@ return (
 <Container fluid="md">
 
     <br />
-    <Navbar bg="dark">
+    <Navbar bg="light">
         <Container>
             <Navbar.Brand fixed="top" href="/">PROJETO PRF</Navbar.Brand>
         </Container>
