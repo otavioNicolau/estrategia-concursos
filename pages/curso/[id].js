@@ -132,7 +132,7 @@ return (
 
 
                         {aula.videos.map((video) => (
-                        <ListGroup.Item key={video.id}>
+                        <div key={video.id}>
 
                             <Alert variant="dark">   
                                 <Alert.Heading>{video.titulo}</Alert.Heading>
@@ -162,7 +162,7 @@ return (
                             {video.resumo ?
                             <>
                                 <Link href={video.resumo}>
-                                <a target="_blank"><Button variant="link">Baixar Resumo</Button></a>
+                                <a><Button variant="link">Baixar Resumo</Button></a>
                                 </Link>
                                 <br></br>
                                 <hr />
@@ -213,7 +213,7 @@ return (
                             : <a></a>}
 
 
-                        </ListGroup.Item>
+                        </div>
                         ))}
                     </ListGroup>
      
