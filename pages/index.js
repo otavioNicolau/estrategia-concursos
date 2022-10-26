@@ -69,9 +69,8 @@ export default function Home() {
 
                     {concursos.cursos.map((cursos) => (
                         <Button key={cursos.id} variant="link">
-                            <Link href={`/curso/${cursos.id}`}><a>{cursos.nome}  {'   -  '}  {cursos.total_aulas} {cursos.total_aulas > 1 ? <a>Aulas</a> : <a>Aula</a>} </a></Link>
-                        </Button>{<br></br>}
-
+                            <Link href={`/curso/${cursos.id}`}><a> {cursos.nome}  {' '} {cursos.total_aulas} {cursos.total_aulas > 1 ? <a>Aulas</a> : <a>Aula</a>} </a></Link>
+                        </Button> <br> </br>
                     ))
                     }
 
