@@ -66,40 +66,15 @@ export default function Home() {
             <Accordion.Item eventKey={concursos.id}>
               <Accordion.Header>{concursos.id} - {concursos.titulo}</Accordion.Header>
               <Accordion.Body>
-                <Table striped>
-                  <thead>
-                    <tr>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody>
+
                     {concursos.cursos.map((cursos) => (
-
-                      <tr key={cursos.id}>
-                        <td>
-                        <Link href={`/curso/${cursos.id}`}>
-                            <a>
-                              {cursos.nome}
-                            </a>
-                          </Link>
-                        </td>
-                        <td>
-                        <Link href={`/curso/${cursos.id}`}>
-                            <a>
-                              {cursos.total_aulas} {cursos.total_aulas > 1 ? <a>Aulas</a> : <a>Aula</a>}
-                            </a>
-                          </Link>
-                        </td>
-
-                      </tr>
-
+                        <Button key={cursos.id} variant="link">
+                            <Link href={`/curso/${cursos.id}`}><a>{cursos.nome} | {cursos.total_aulas} {cursos.total_aulas > 1 ? <a>Aulas</a> : <a>Aula</a>} </a>      </Link>
+                        </Button>
 
                     ))
                     }
-                  </tbody>
-                </Table>
+
               </Accordion.Body>
             </Accordion.Item> {<br></br>}
           </Accordion>
