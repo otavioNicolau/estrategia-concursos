@@ -67,8 +67,8 @@ export default function Home() {
 
                     {concursos.cursos.map((cursos) => (
                       <div key={cursos.id} className="d-grid gap-2" >
-                        <Button variant="link" size="lg">
-                            <Link href={`/curso/${cursos.id}`}><a> {cursos.nome}  {' '} {cursos.total_aulas} {cursos.total_aulas > 1 ? <a>Aulas</a> : <a>Aula</a>} </a></Link>
+                        <Button variant="secondary" size="lg">
+                            <Link href={`/curso/${cursos.id}`}><a> {cursos.nome}  {' ( '} {cursos.total_aulas} {cursos.total_aulas > 1 ? <a>Aulas</a> : <a>Aula</a>} {' ) '}</a></Link>
                         </Button>
                         </div>
                     ))
