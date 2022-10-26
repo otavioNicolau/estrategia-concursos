@@ -66,8 +66,8 @@ export default function Home() {
               <Accordion.Body>
 
                     {concursos.cursos.map((cursos) => (
-                      <Link href={`/curso/${cursos.id}`}><a>
-                        <Alert show={show} key={cursos.id} variant="light">
+                      <Link key={cursos.id} href={`/curso/${cursos.id}`}><a>
+                        <Alert show={show} variant="light">
                               <Alert.Heading>{cursos.nome} {cursos.nome}  {' ( '} {cursos.total_aulas} {cursos.total_aulas > 1 ? <a>Aulas</a> : <a>Aula</a>} {' ) '} </Alert.Heading>
                         </Alert>
                       </a></Link>
