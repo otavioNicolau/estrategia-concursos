@@ -133,53 +133,60 @@ export default function Curso() {
                           <Card.Header><b>{video.id} - {video.titulo}</b></Card.Header>
 
                           {video.audio ?
+                           <>
                               <Link href={video.audio}>
                                 <a target="_blank"><Button variant="link">Baixar Audio</Button></a>
                               </Link>
-                     <br></br><hr />
+                    <br></br><hr /></>
                      
                             : <a></a>}
 
                           {video.mapa_mental ?
+                              <>
                               <Link href={video.mapa_mental}>
                                 <a target="_blank"><Button variant="link">Baixar Mapa Mental</Button></a>
                               </Link>
-                           <br></br><hr />
+                           <br></br><hr /></>
                             : <a></a>}
 
                           {video.resumo ?
+                              <>
                               <Link href={video.resumo}>
                                 <a target="_blank"><Button variant="link">Baixar Resumo</Button></a>
                               </Link>
-                          <br></br><hr />
+                         <br></br><hr /></>
                             : <a></a>}
 
                           {video.slide ?
+                              <>
                               <Link href={video.slide}>
                                 <a target="_blank"><Button variant="link">Baixar Slide</Button></a>
                               </Link>
-                        <br></br><hr />
+                        <br></br><hr /></>
                             : <a></a>}
 
                           {video.resolucoes['360p'] ?
+                              <>
                               <Link href={video.resolucoes['360p']}>
                                 <a target="_blank"><Button variant="link">Baixar Video na Resolução: 360p</Button></a>
                               </Link>
-                         <br></br><hr />
+                         <br></br><hr /></>
                             : <a></a>}
 
                           {video.resolucoes['480p'] ?
+                              <>
                               <Link href={video.resolucoes['480p']}>
                                 <a target="_blank"><Button variant="link">Baixar Video na Resolução: 480p</Button></a>
                               </Link>
-                          <br></br><hr />
+                          <br></br><hr /></>
                             : <a></a>}
 
                           {video.resolucoes['720p'] ?
+                              <>
                               <Link href={video.resolucoes['720p']}>
                                 <a target="_blank"><Button variant="link">Baixar Video na Resolução: 720p</Button></a>
                               </Link>
-                        <br></br><hr />
+                        <br></br><hr /></>
                             : <a></a>}
 
                   
