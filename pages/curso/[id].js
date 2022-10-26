@@ -93,26 +93,30 @@ export default function Curso() {
                   <ListGroup variant="flush">
                     <ListGroup.Item>
                       {aula.pdf ?
+                       <>
                         <Link href={aula.pdf}>
                           <a target="_blank"><Button variant="link">PDF NORMAL</Button></a>
                         </Link>
-<hr />
+                        <hr />  </>
                         : <a></a>}
                       {aula.pdf_grifado ?
+                          <>
                         <Link href={aula.pdf_grifado} >
                           <a target="_blank"><Button variant="link">PDF GRIFADO</Button></a>
                         </Link>
-                       <hr />
+                      <hr />  </>
                         : <a></a>}
                       {aula.pdf_simplificado ?
+                          <>
                         <Link href={aula.pdf_simplificado}>
                           <a target="_blank"><Button variant="link">PDF SIMPLIFICADO</Button></a>
                         </Link>
-                       <hr />
+                       <hr />  </>
                         : <a></a>}
                     </ListGroup.Item>
 
                     {aula.tec_concursos ?
+                        <>
                       <ListGroup.Item>
                         <Link href={aula.tec_concursos}>
                           <a target="_blank"><Button variant="link">CADERNO NO TEC-CONCUROS</Button></a>
