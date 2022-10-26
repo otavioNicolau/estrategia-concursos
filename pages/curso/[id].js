@@ -96,16 +96,19 @@ export default function Curso() {
                         <Link href={aula.pdf}>
                           <a target="_blank"><Button variant="link">PDF NORMAL</Button></a>
                         </Link>
+<hr />
                         : <a></a>}
                       {aula.pdf_grifado ?
                         <Link href={aula.pdf_grifado} >
                           <a target="_blank"><Button variant="link">PDF GRIFADO</Button></a>
                         </Link>
+                       <hr />
                         : <a></a>}
                       {aula.pdf_simplificado ?
                         <Link href={aula.pdf_simplificado}>
                           <a target="_blank"><Button variant="link">PDF SIMPLIFICADO</Button></a>
                         </Link>
+                       <hr />
                         : <a></a>}
                     </ListGroup.Item>
 
@@ -114,6 +117,7 @@ export default function Curso() {
                         <Link href={aula.tec_concursos}>
                           <a target="_blank"><Button variant="link">CADERNO NO TEC-CONCUROS</Button></a>
                         </Link>
+                     <hr />
                       </ListGroup.Item>
                       : <a></a>}
 
@@ -128,42 +132,49 @@ export default function Curso() {
                               <Link href={video.audio}>
                                 <a target="_blank"><Button variant="link">Baixar Audio</Button></a>
                               </Link>
+                     <hr />
                             : <a></a>}
 
                           {video.mapa_mental ?
                               <Link href={video.mapa_mental}>
                                 <a target="_blank"><Button variant="link">Baixar Mapa Mental</Button></a>
                               </Link>
+                           <hr />
                             : <a></a>}
 
                           {video.resumo ?
                               <Link href={video.resumo}>
                                 <a target="_blank"><Button variant="link">Baixar Resumo</Button></a>
                               </Link>
+                           <hr />
                             : <a></a>}
 
                           {video.slide ?
                               <Link href={video.slide}>
                                 <a target="_blank"><Button variant="link">Baixar Slide</Button></a>
                               </Link>
+                           <hr />
                             : <a></a>}
 
                           {video.resolucoes['360p'] ?
                               <Link href={video.resolucoes['360p']}>
                                 <a target="_blank"><Button variant="link">Baixar Video na Resolução: 360p</Button></a>
                               </Link>
+                           <hr />
                             : <a></a>}
 
                           {video.resolucoes['480p'] ?
                               <Link href={video.resolucoes['480p']}>
                                 <a target="_blank"><Button variant="link">Baixar Video na Resolução: 480p</Button></a>
                               </Link>
+                           <hr />
                             : <a></a>}
 
                           {video.resolucoes['720p'] ?
                               <Link href={video.resolucoes['720p']}>
                                 <a target="_blank"><Button variant="link">Baixar Video na Resolução: 720p</Button></a>
                               </Link>
+                           <hr />
                             : <a></a>}
 
                   
