@@ -56,7 +56,7 @@ return (
 <Container fluid="md">
 
     <br />
-    <Navbar bg="light">
+    <Navbar bg="dark">
         <Container>
             <Navbar.Brand fixed="top" href="/">PROJETO PRF</Navbar.Brand>
         </Container>
@@ -134,7 +134,7 @@ return (
                         {aula.videos.map((video) => (
                         <ListGroup.Item key={video.id}>
 
-                            <Alert variant={variant}>   
+                            <Alert variant="dark">   
                                 <Alert.Heading>{video.id} - {video.titulo}</Alert.Heading>
                             </Alert>
 
