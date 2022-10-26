@@ -119,69 +119,55 @@ export default function Curso() {
 
 
                     {aula.videos.map((video) => (
-                      <ListGroup.Item key={video.id} >
+                      <ListGroup.Item key={video.id} >  
 
-                        <ListGroup>
+              
                           <Card.Header><b>{video.id} - {video.titulo}</b></Card.Header>
 
                           {video.audio ?
-                            <ListGroup.Item>
                               <Link href={video.audio}>
                                 <a target="_blank"><Button variant="link">Baixar Audio</Button></a>
                               </Link>
-                            </ListGroup.Item>
                             : <a></a>}
 
                           {video.mapa_mental ?
-                            <ListGroup.Item>
                               <Link href={video.mapa_mental}>
                                 <a target="_blank"><Button variant="link">Baixar Mapa Mental</Button></a>
                               </Link>
-                            </ListGroup.Item>
                             : <a></a>}
 
                           {video.resumo ?
-                            <ListGroup.Item>
                               <Link href={video.resumo}>
                                 <a target="_blank"><Button variant="link">Baixar Resumo</Button></a>
                               </Link>
-                            </ListGroup.Item>
                             : <a></a>}
 
                           {video.slide ?
-                            <ListGroup.Item>
                               <Link href={video.slide}>
                                 <a target="_blank"><Button variant="link">Baixar Slide</Button></a>
                               </Link>
-                            </ListGroup.Item>
                             : <a></a>}
 
                           {video.resolucoes['360p'] ?
-                            <ListGroup.Item>
                               <Link href={video.resolucoes['360p']}>
                                 <a target="_blank"><Button variant="link">Baixar Video na Resolução: 360p</Button></a>
                               </Link>
-                            </ListGroup.Item>
                             : <a></a>}
 
                           {video.resolucoes['480p'] ?
-                            <ListGroup.Item>
                               <Link href={video.resolucoes['480p']}>
                                 <a target="_blank"><Button variant="link">Baixar Video na Resolução: 480p</Button></a>
                               </Link>
-                            </ListGroup.Item>
                             : <a></a>}
 
                           {video.resolucoes['720p'] ?
-                            <ListGroup.Item>
                               <Link href={video.resolucoes['720p']}>
                                 <a target="_blank"><Button variant="link">Baixar Video na Resolução: 720p</Button></a>
                               </Link>
-                            </ListGroup.Item>
                             : <a></a>}
 
-                        </ListGroup>
-                      </ListGroup.Item>
+                  
+                      </ListGroup.Item> 
                     ))}
                   </ListGroup>
                 </Card>
