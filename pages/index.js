@@ -72,6 +72,7 @@ export default function Home() {
                               <Link href={`/curso/${cursos.id}`}><a> {cursos.nome}  {' ( '} {cursos.total_aulas} {cursos.total_aulas > 1 ? <a>Aulas</a> : <a>Aula</a>} {' ) '}</a></Link>
                           </Button>
                         </div>
+                        <hr />
  
 
                     ))
