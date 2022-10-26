@@ -52,7 +52,7 @@ export default function Home() {
       <br />
       <Navbar bg="light">
         <Container>
-          <Navbar.Brand href="/">PROJETO PRF</Navbar.Brand>
+          <Navbar.Brand fixed="top" href="/">PROJETO PRF</Navbar.Brand>
         </Container>
       </Navbar>
       <br />
@@ -66,11 +66,11 @@ export default function Home() {
               <Accordion.Body>
 
                     {concursos.cursos.map((cursos) => (
-                      <div key={cursos.id} className="d-grid gap-2" >
-                        <Button variant="secondary" size="lg">
-                            <Link href={`/curso/${cursos.id}`}><a> {cursos.nome}  {' ( '} {cursos.total_aulas} {cursos.total_aulas > 1 ? <a>Aulas</a> : <a>Aula</a>} {' ) '}</a></Link>
-                        </Button>
-                        </div>
+                      <Link href={`/curso/${cursos.id}`}><a>
+                        <Alert show={show} key={cursos.id} variant="light">
+                              <Alert.Heading>{cursos.nome} {cursos.nome}  {' ( '} {cursos.total_aulas} {cursos.total_aulas > 1 ? <a>Aulas</a> : <a>Aula</a>} {' ) '} </Alert.Heading>
+                        </Alert>
+                      </a></Link>
                     ))
                     }
 
