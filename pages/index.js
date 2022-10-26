@@ -39,7 +39,7 @@ export default function Home() {
   if (error) return <div>falhou em carregar</div>
   if (!data){ 
     return (
-      <Spinner style={{position: 'absolute', margin-left: 'auto', margin-right: 'auto', left: 0, right: 0, text-align: 'center'}}> animation="border" role="status">
+      <Spinner style={{position: 'absolute', margin-left: 'auto', margin-right: 'auto', left: 0, right: 0, text-align: 'center'}} animation="border" role="status">
         <span className="visually-hidden">Loading...</span>
       </Spinner>
     ) 
