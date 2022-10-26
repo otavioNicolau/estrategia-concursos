@@ -50,7 +50,7 @@ export default function Home() {
     <Container fluid="md">
 
       <br />
-      <Navbar bg="light">
+      <Navbar bg="dark">
         <Container>
           <Navbar.Brand fixed="top" href="/">PROJETO PRF</Navbar.Brand>
         </Container>
