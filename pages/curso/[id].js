@@ -90,7 +90,7 @@ return (
             <Accordion.Header>{aula.nome} - {aula.conteudo}</Accordion.Header>
             <Accordion.Body>
 
-                <Card>
+             
                     <ListGroup variant="flush">
                         <ListGroup.Item>
                             {aula.pdf ?
@@ -215,7 +215,7 @@ return (
                         </ListGroup.Item>
                         ))}
                     </ListGroup>
-                </Card>
+     
             </Accordion.Body>
         </Accordion.Item> {<br></br>}
     </Accordion>
