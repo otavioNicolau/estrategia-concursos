@@ -134,8 +134,9 @@ return (
                         {aula.videos.map((video) => (
                         <ListGroup.Item key={video.id}>
 
-
-                            <Card.Header><b>{video.id} - {video.titulo}</b></Card.Header>
+                            <Alert key={variant} variant={variant}>   
+                                <Alert.Heading>{video.id} - {video.titulo}</Alert.Heading>
+                            </Alert>
 
                             {video.audio ?
                             <>
