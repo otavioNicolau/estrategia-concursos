@@ -57,8 +57,6 @@ export default function Home() {
       </Navbar>
       <br />
 
-
-
       {data &&
         data.concursos.map((concursos) => (
 
@@ -68,9 +66,11 @@ export default function Home() {
               <Accordion.Body>
 
                     {concursos.cursos.map((cursos) => (
-                        <Button key={cursos.id} variant="link">
+                      <div className="d-grid gap-2" >
+                        <Button key={cursos.id} variant="link" size="lg">
                             <Link href={`/curso/${cursos.id}`}><a> {cursos.nome}  {' '} {cursos.total_aulas} {cursos.total_aulas > 1 ? <a>Aulas</a> : <a>Aula</a>} </a></Link>
-                        </Button> <br> </br>
+                        </Button>
+                        </div>
                     ))
                     }
 
