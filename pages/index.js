@@ -66,11 +66,14 @@ export default function Home() {
               <Accordion.Body>
 
                     {concursos.cursos.map((cursos) => (
-                      <Link key={cursos.id} href={`/curso/${cursos.id}`}><a>
-                        <Alert variant="light">
-                              <Alert.Heading>{cursos.nome} {cursos.nome}  {' ( '} {cursos.total_aulas} {cursos.total_aulas > 1 ? <a>Aulas</a> : <a>Aula</a>} {' ) '} </Alert.Heading>
-                        </Alert>
-                      </a></Link>
+                      
+                                              <div key={cursos.id} className="d-grid gap-2" >
+                          <Button variant="link" size="lg">
+                              <Link href={`/curso/${cursos.id}`}><a> {cursos.nome}  {' ( '} {cursos.total_aulas} {cursos.total_aulas > 1 ? <a>Aulas</a> : <a>Aula</a>} {' ) '}</a></Link>
+                          </Button>
+                        </div>
+ 
+
                     ))
                     }
 
