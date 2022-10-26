@@ -135,7 +135,7 @@ return (
                         <ListGroup.Item key={video.id}>
 
                             <Alert variant="dark">   
-                                <Alert.Heading>{video.id} - {video.titulo}</Alert.Heading>
+                                <Alert.Heading>{video.titulo}</Alert.Heading>
                             </Alert>
 
                             {video.audio ?
