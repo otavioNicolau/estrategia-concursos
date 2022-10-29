@@ -5,7 +5,7 @@ import {
 export default function Loader() {
     return (
         <>
-            <Spinner animation="border" role="status">
+            <Spinner className="justify-content-md-center" animation="border" role="status">
                 <span className="visually-hidden">Loading...</span>
             </Spinner>
         </>

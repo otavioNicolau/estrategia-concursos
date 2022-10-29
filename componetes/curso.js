@@ -4,7 +4,7 @@ import {
 import Link from 'next/link';
 
 export default function Curso({ curso }) {
-    console.table(curso);
+   
     return (
         <>
             <Button variant="link">

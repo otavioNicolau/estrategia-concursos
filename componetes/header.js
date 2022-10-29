@@ -13,7 +13,7 @@ import {
 
 export default function Header() {
     return (
-        <Container>
+        <Container fluid >
             <Navbar expand="lg" variant="light" bg="light">
                 <Container>
                     <Navbar.Brand fixed="top" href="/">PROJETO PRF</Navbar.Brand>

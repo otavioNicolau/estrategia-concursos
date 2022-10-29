@@ -1,7 +1,7 @@
 import axios from 'axios';
 import useSWR from 'swr';
 import { useRouter } from 'next/router';
-import {Accordion,Container,} from 'react-bootstrap';
+import { Accordion, Container, } from 'react-bootstrap';
 
 import Header from '../../componetes/header';
 import Loader from '../../componetes/loader';
@@ -33,7 +33,7 @@ export default function Curso() {
 
 
     return (
-        <Container>
+        <Container fluid >
 
             <Header />
 
