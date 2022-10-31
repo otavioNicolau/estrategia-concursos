@@ -12,7 +12,7 @@ export default function Concurso({ concurso }) {
                 {concurso.cursos.map((curso) => (
                     <div key={curso.id} >
                         <Curso curso={curso} />
-                    </div><br></br>
+                    </div>
                 ))}
             </Accordion.Body>
         </Accordion.Item>
