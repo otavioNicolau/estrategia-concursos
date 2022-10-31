@@ -12,8 +12,8 @@ export default function Concurso({ concurso }) {
                 {concurso.cursos.map((curso) => (
                     <div key={curso.id} >
                         <Curso curso={curso} />
-                    </div>
-                ))}{<br></br>}
+                    </div><br></br>
+                ))}
             </Accordion.Body>
         </Accordion.Item>
     );
