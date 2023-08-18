@@ -6,6 +6,7 @@ import Curso from '../componetes/curso';
 
 export default function Concurso({ concurso }) {
     return (
+        
         <Accordion.Item eventKey={concurso.id}>
             <Accordion.Header>{concurso.titulo}</Accordion.Header>
             <Accordion.Body>
@@ -15,7 +16,9 @@ export default function Concurso({ concurso }) {
                     </div>
                 ))}
             </Accordion.Body>
+                
         </Accordion.Item>
+
     );
 }
 
