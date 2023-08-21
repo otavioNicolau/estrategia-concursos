@@ -46,6 +46,9 @@ export default function Home() {
             <div key={concurso.id}>
               <Concurso concurso={concurso} />
             </div>
+               <div>
+            <br>
+               </div>                  
           ))}
         </Accordion>
 
