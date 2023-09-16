@@ -42,10 +42,7 @@ export default function Home() {
           {data && data.concursos.map((concurso) => (
             <div key={concurso.id}>
               <Concurso concurso={concurso} />
-            </div>
-               <div>
-            <br>
-               </div>                  
+            </div>                 
           ))}
         </Accordion>
 
